@@ -18,14 +18,6 @@ const Nav = () => {
             <button className='nav'>Projects</button>
           </Link>
 
-          <Link to='/education'>
-            <button className='nav'>Education</button>
-          </Link>
-
-          <Link to='/experience'>
-            <button className='nav'>Experience</button>
-          </Link>
-
           <Link to='/contact'>
             <button className='nav'>Contact</button>
           </Link>
