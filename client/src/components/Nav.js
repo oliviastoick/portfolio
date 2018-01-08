@@ -6,19 +6,19 @@ const Nav = () => {
     <div className='nav-container'>
       <nav>
         <ul className='container'>
-          <Link to='/'>
+          <Link to='/portfolio'>
             <button className='nav'>Home</button>
           </Link>
 
-          <Link to='/about'>
+          <Link to='/portfolio/about'>
             <button className='nav'>About</button>
           </Link>
 
-          <Link to='/projects'>
+          <Link to='/portfolio/projects'>
             <button className='nav'>Projects</button>
           </Link>
 
-          <Link to='/contact'>
+          <Link to='/portfolio/contact'>
             <button className='nav'>Contact</button>
           </Link>
         </ul>
