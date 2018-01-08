@@ -1,18 +1,31 @@
+
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Route} from 'react-router-dom'
 import './App.css'
+import Nav from './components/Nav'
+import Home from './components/Home'
+import About from './components/About'
+import Education from './components/Education'
+import Experience from './components/Experience'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 class App extends Component {
   render () {
     return (
-      <div className='App'>
-        <header className='App-header'>
-          <h1 className='App-title'>Olivia Stoick</h1>
-          <h2 className='description-title'>I'm a full-stack web developer.</h2>
-        </header>
-        <p className='App-intro'>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Router>
+        <div className='App'>
+          <Nav />
+          <Route exact path='/' component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/projects' component={Projects} />
+          <Route path='/contact' component={Contact} />
+          <Route path='/experience' component={Experience} />
+          <Route path='/education' component={Education} />
+          <Footer />
+        </div>
+      </Router>
     )
   }
 }
